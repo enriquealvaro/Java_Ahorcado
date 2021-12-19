@@ -18,11 +18,10 @@ import javax.swing.JButton;
 public class VentanaAhorcado extends javax.swing.JFrame {
 
     String palabraOculta = "CETYS"; //palabra a adivinar
-    //en esta primera versión del ahorcado, siempre es la misma palabra
 
+//estas variables cuanetan el numero de aciertos y fallos
     int numeroFallos = 0;
     int numeroAciertos = 0;
-    boolean hasPerdido = false;
 
     public void chequeaLetra(String letra) {
         letra = letra.toUpperCase(); //convierto la letra en mayúscula
