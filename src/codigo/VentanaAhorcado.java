@@ -48,6 +48,7 @@ public class VentanaAhorcado extends javax.swing.JFrame {
             }
         } else {
             numeroFallos++;
+            dibujaImagen(numeroFallos);
             //si has agotado todas las oportunidades te salta has perido y se desactivan 
             //todas las teclas  
             if (numeroFallos == 5) {
@@ -146,7 +147,7 @@ public class VentanaAhorcado extends javax.swing.JFrame {
         initComponents();
         palabraOculta = palabraAleatoria();
         masMenosGuion();
-        dibujaImagen(0);
+        dibujaImagen(numeroFallos);
 
     }
 
